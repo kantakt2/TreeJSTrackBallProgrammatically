@@ -153,6 +153,7 @@ var TrackballControls = function ( object, domElement ) {
 
 				eyeDirection.copy( _eye ).normalize();
 				objectUpDirection.copy( scope.object.up ).normalize();
+				console.log(objectUpDirection);
 				objectSidewaysDirection.crossVectors( objectUpDirection, eyeDirection ).normalize();
 
 				objectUpDirection.setLength( _moveCurr.y - _movePrev.y );
